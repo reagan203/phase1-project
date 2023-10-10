@@ -64,7 +64,7 @@ function renderCars(cars) {
 
     cars.forEach(car => {
       const li = document.createElement('li');
-      li.textContent = `Make: ${car.make}, Model: ${car.model}`;
+      li.textContent = `Make: ${car.make}, Model: ${car.model}, Transmission: ${car.transmission}, Drive: ${car.drive}, year: ${car.year}, Cylinders: ${car.cylinders}`;
       ul.appendChild(li);
     });
 
