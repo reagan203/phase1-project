@@ -56,12 +56,10 @@ function renderCars(cars) {
 }
 
 function getCars() {
-  fetch("https://api.api-ninjas.com/v1/cars?limit=50&model=supra", requestOptions)
+  fetch("https://api.api-ninjas.com/v1/cars?limit=10&model=supra", requestOptions)
     .then(response => response.json())
     .then(result => renderCars(result))
-    .catch(error => console.log('error', error));
-}
-
-
+    .catch(error => console.log('error', error)
+)}
 
 
