@@ -19,11 +19,16 @@ function renderCars(cars) {
 
     cars.forEach(car => {
       const li = document.createElement('li');
+      //track votes
+      let likeCount=0;
+      let dislikeCount=0;
       li.innerHTML = `
         <div>
           <p>Make: ${car.make}, Model: ${car.model}, Transmission: ${car.transmission}, Drive: ${car.drive}, year: ${car.year}, Cylinders: ${car.cylinders}</p>
           <button class="like-button">Like</button>
+          <span class ="like-count">likes:${likeCount}</span>
           <button class="dislike-button">Dislike</button>
+          <span class="dislike-count">Dislikes: ${dislikeCount}</span>
         </div>
       `;
       ul.appendChild(li);
@@ -31,16 +36,20 @@ function renderCars(cars) {
       // Attach event listeners to like and dislike buttons
       const likeButton = li.querySelector('.like-button');
       const dislikeButton = li.querySelector('.dislike-button');
+      const likeCountSpan = li.querySelector('.like-count');
+      const dislikeCountSpan = li.querySelector('.dislike-count');
 
       likeButton.addEventListener('click', () => {
-        // Handle like button click here (you can increment a like count for the car, for example)
-        // You can add your logic here
+        likeCount++;
+        likeCountSpan.textContent = `Likes: ${likeCount}`;
+        // Handle like button click here 
         console.log(`Liked: ${car.make} ${car.model}`);
       });
 
       dislikeButton.addEventListener('click', () => {
-        // Handle dislike button click here (you can increment a dislike count for the car, for example)
-        // You can add your logic here
+        dislikeCount++;
+        dislikeCountSpan.textContent = `Dislikes: ${dislikeCount}`;
+        // Handle dislike button click here 
         console.log(`Disliked: ${car.make} ${car.model}`);
       });
     });
@@ -62,7 +71,7 @@ function getCars() {
     .catch(error => console.log('error', error)
 )}
 
-// script.js
+//comment section
 document.addEventListener("DOMContentLoaded", function () {
   const commentText = document.getElementById("commentText");
   const submitComment = document.getElementById("submitComment");
