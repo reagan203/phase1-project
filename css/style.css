@@ -30,10 +30,17 @@ body {
   /* Style the about section */
   #about {
     text-align: center;
-    background-color: #3333333b;
+    background-color: #7e2e2e3b;
     color: #fff;
     padding: 10px;
   }
+  #paragraph {
+    text-align: center;
+    background-color: #7426263b;
+    color: #1f1d1dfa;
+    padding: 10px;
+  }
+  
   #gallery {
     text-align: center;
     background-color: #3333333b;
