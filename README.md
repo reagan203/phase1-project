@@ -12,3 +12,14 @@ we create a html list in javascript
 for each element of the API we add a like and a dislike button
 add an event listiner for each of the buttons both the like and the dislike button
 set the count for each button to be zero
+appending the list to the container
+
+
+
+creating a comment section to take the comments of the user
+use an eventlistiner to add to the dom
+give it the condition not to submit if the comment is empty using if
+append the comment
+
+craete a button for the about an in the button put the anchor button
+
