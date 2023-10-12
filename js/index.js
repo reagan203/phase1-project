@@ -99,3 +99,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// JavaScript for capturing the selected rating
+const ratingInputs = document.querySelectorAll('.rating input');
+
+ratingInputs.forEach(input => {
+  input.addEventListener('change', function() {
+    console.log(`Selected rating: ${this.value}`);
+  });
+});
+

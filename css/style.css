@@ -1,0 +1,148 @@
+
+  /* Set the background image for the entire page */
+body {
+    background-image: url('https://www.carscoops.com/wp-content/uploads/2020/02/Toyota-Supra-13.jpg'); /* Replace 'your-background-image.jpg' with the actual file path of your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  /* Style the header */
+  h1 {
+    text-align: center;
+    background-color: #0000007e;
+    color: #e6bdbd;
+    padding: 20px;
+  }
+  
+  /* Style the navigation buttons */
+  #box1 button {
+    background-color: #372aaf42;
+    color: #4cac1400;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style the about section */
+  #about {
+    text-align: center;
+    background-color: #3333333b;
+    color: #fff;
+    padding: 10px;
+  }
+  #gallery {
+    text-align: center;
+    background-color: #3333333b;
+    color: #fff;
+    padding: 10px;
+  }
+  #contacts {
+    text-align: center;
+    background-color: #3333333b;
+    color: #fff;
+    padding: 10px;
+  }
+  #back{
+    text-align: center;
+    background-color: #3333333b;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  /* Style the paragraphs */
+  p {
+    margin: 10px;
+  }
+  
+  /* Style the contact information */
+  h4 {
+    margin-top: 20px;
+  }
+  
+  /* Style the feedback section */
+  #feedback {
+    text-align: center;
+    background-color: #33333349;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  /* Style the comment form */
+  #commentForm {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  #commentText {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  #submitComment {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Style the comment list */
+  .comment {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+
+  /* Style the items fetched from the API */
+li {
+    margin: 0px;
+    padding: 1px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  
+  .like-button, .dislike-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .like-count, .dislike-count {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Example: Change the color of the buttons on hover */
+  .like-button:hover, .dislike-button:hover {
+    background-color: #444;
+  }
+  
+  /* Gallery Styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .gallery img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
