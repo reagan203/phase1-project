@@ -1,7 +1,7 @@
 
-  /* Set the background image for the entire page */
+  /* Set the background image */
 body {
-    background-image: url('https://www.carscoops.com/wp-content/uploads/2020/02/Toyota-Supra-13.jpg'); /* Replace 'your-background-image.jpg' with the actual file path of your image */
+    background-image: url('https://www.carscoops.com/wp-content/uploads/2020/02/Toyota-Supra-13.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -131,7 +131,7 @@ li {
     font-weight: bold;
   }
   
-  /* Example: Change the color of the buttons on hover */
+  /* Change the color of the buttons on hover */
   .like-button:hover, .dislike-button:hover {
     background-color: #444;
   }
