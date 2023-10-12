@@ -53,6 +53,12 @@ body {
     color: #fff;
     padding: 10px;
   }
+  #video {
+    text-align: center;
+    background-color: #3333333b;
+    color: #fff;
+    padding: 10px;
+  }
   #back{
     text-align: center;
     background-color: #3333333b;
